@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   ktp-auth-handler-17.12.1.tar.xz: 996513afcaf3552950eb421edc0f4f325ae364dc
+sources:
+  ktp-auth-handler-17.12.2.tar.xz: a1f402dd880abdae80c1ee7e0ed1458ae6acf8b7
