@@ -46,6 +46,7 @@ BuildRequires:	cmake(AccountsQt5)
 BuildRequires:	cmake(SignOnQt5)
 BuildRequires:	cmake(KAccounts)
 BuildRequires:	pkgconfig(shared-mime-info)
+BuildRequires:	pkgconfig(libaccounts-glib)
 
 %description
 KDE Telepathy authentication handler
