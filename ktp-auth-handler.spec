@@ -1,7 +1,7 @@
 Summary:	KDE Telepathy authentication handler
 Name:		ktp-auth-handler
 Version:	20.04.2
-Release:	1
+Release:	2
 Epoch:		1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -47,9 +47,11 @@ BuildRequires:	cmake(SignOnQt5)
 BuildRequires:	cmake(KAccounts)
 BuildRequires:	pkgconfig(shared-mime-info)
 BuildRequires:	pkgconfig(libaccounts-glib)
+BuildRequires:	%{_lib}qca2-plugin-openssl
+Requires:	%{_lib}qca2-plugin-openssl
 
 %description
-KDE Telepathy authentication handler
+KDE Telepathy authentication handler.
 
 %files -f %{name}.lang
 %{_libdir}/libexec/ktp-auth-handler
@@ -57,7 +59,7 @@ KDE Telepathy authentication handler
 %{_datadir}/telepathy/clients/KTp.*.client
 
 %prep
-%setup -q
+%autosetup -p1
 %cmake_kde5
 
 %build
