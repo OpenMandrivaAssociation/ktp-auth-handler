@@ -1,6 +1,6 @@
 Summary:	KDE Telepathy authentication handler
 Name:		ktp-auth-handler
-Version:	21.08.3
+Version:	21.12.0
 Release:	1
 Epoch:		1
 License:	GPLv2+
